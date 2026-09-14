@@ -1,0 +1,16 @@
+{
+  "artifact": "Scan Coverage Autopilot",
+  "repository": "https://github.com/SweetKenneth/shpbl-scan-coverage-autopilot",
+  "version": "1.0.0",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Kenneth E. Sweet Jr.",
+  "file_count": 22,
+  "checksums_sha256_root": "9e8e9a7f4418f0472767f0276611aea810431cdfc89c0cf4f6b6f8dcb7875f9d",
+  "verification": {
+    "tests_passed": 25,
+    "tests_failed": 0,
+    "hammer": "{\"hammer\":\"PASS\",\"cases\":30000,\"checks\":120000,\"seed\":1254138546}",
+    "security_scan": "security scan OK — 6 runtime source files, 0 forbidden egress/process/filesystem symbols",
+    "runtime_dependencies": 0
+  }
+}

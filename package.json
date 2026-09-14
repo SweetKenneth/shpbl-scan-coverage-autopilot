@@ -1,0 +1,41 @@
+{
+  "name": "shpbl-scan-coverage-autopilot",
+  "version": "1.0.0",
+  "description": "Finds stale and never-scanned coverage against risk-tier maximum ages, predicts each target's duration from real scan history, and emits a capacity-bounded, risk-weighted next schedule that explicitly reports every overdue target it could not fit and the reason.",
+  "license": "MIT",
+  "author": "Kenneth E. Sweet Jr. (https://shpbl.com)",
+  "homepage": "https://shpbl.com/tenable-submissions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SweetKenneth/shpbl-scan-coverage-autopilot.git"
+  },
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test dist/tests/*.test.js",
+    "start": "node dist/src/mcp-server.js",
+    "example": "node dist/examples/worked-example.js",
+    "hammer": "node dist/scripts/hammer.js",
+    "security": "node scripts/security-scan.mjs",
+    "check": "npm run build && npm run typecheck && npm test && npm run hammer && npm run security && npm run example"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "5.6.3"
+  },
+  "keywords": [
+    "scan-planning",
+    "vulnerability-management",
+    "coverage",
+    "capacity-planning",
+    "deterministic",
+    "provenance",
+    "mcp"
+  ]
+}

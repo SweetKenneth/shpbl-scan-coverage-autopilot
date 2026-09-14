@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_id": "CMP-NAVI-003",
+  "artifact_name": "Scan Coverage Autopilot",
+  "run_id": "navi-harvest-20260914-001",
+  "creation": "fresh implementation from the governed behavior specification in this run",
+  "host_source": {
+    "repository": "packetchaos/navi",
+    "author_credit": "Casey Reid / packetchaos",
+    "intake": "local-archive",
+    "vcs": "NONE",
+    "source_sha256": "570677f2ba1b7d0d17017738b2cc6cc858225dde1e7562ff0dd27dbc382ac2f3",
+    "observed_paths": [
+      "navi/plugins/database.py",
+      "navi/plugins/scan.py",
+      "navi/plugins/scan_evaluation.py",
+      "navi/plugins/scan_efficentcy.py",
+      "navi/plugins/scan_eval.py"
+    ],
+    "literal_source_bytes_copied": 0,
+    "license_observation": {
+      "root_LICENSE": "MIT",
+      "README": "MIT",
+      "setup_py": "GNUv3 / GPLv3 classifier",
+      "status": "metadata discrepancy recorded; not resolved by assumption"
+    }
+  },
+  "shpbl_parents": [
+    "crown-jewel|SYSTEM::predictLoad|c64970bf84e548b1",
+    "primitive|ORACLE::runCounterfactual|a7c908568d731da0",
+    "primitive|ORACLE::getRiskSnapshot|c251739cd35d5510",
+    "primitive|SHADOW::compareSnapshots|e1c5e74039e450db"
+  ],
+  "shpbl_parent_use": "behavioral/capability composition lineage; implementation written afresh for this artifact",
+  "novel_composition": "Navi can control scans and measure scan history and efficiency; the selected SHPBL parents add load prediction, risk, counterfactual and state-comparison concepts. The composition turns retrospective scan analytics into a forward, capacity-bounded coverage planner.",
+  "authority": {
+    "build_run_local": "AUTHORIZED",
+    "mutate_host": "REFUSED",
+    "licensed_reuse": "AUTHORIZED with Navi behavior/provenance only; 0 literal Navi implementation bytes",
+    "retain_caller_capability": "AUTHORIZED",
+    "admit_canon": "NOT_YET"
+  },
+  "claim_ceiling": "Public MIT release, Copyright (c) 2026 Kenneth E. Sweet Jr. Submitted to the Tenable CyberAgents Exchange for review; no Tenable review, approval, certification, endorsement or acceptance is claimed, and no endorsement by the upstream author is implied.",
+  "public_release": {
+    "state": "PUBLIC_MIT_RELEASE",
+    "repository": "https://github.com/SweetKenneth/shpbl-scan-coverage-autopilot",
+    "version": "1.0.0",
+    "outbound_license": "MIT",
+    "copyright_holder": "Kenneth E. Sweet Jr.",
+    "upstream_repository_url": "https://github.com/packetchaos/navi",
+    "upstream_license_observed": "MIT",
+    "literal_upstream_lines_copied": 0,
+    "literal_shpbl_capability_bodies_copied": 0,
+    "shpbl_method": "https://shpbl.com",
+    "endorsement_implied": false,
+    "tenable_status": "submitted for review; no approval or endorsement claimed"
+  }
+}
